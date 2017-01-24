@@ -13,17 +13,23 @@
     tools:context="pl.bialorucki.foregroundservice.MainActivity">
 
     <TextView
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Service control"/>
 
     <Button
+        android:id="@+id/button_start_service"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/start_service"/>
 
     <Button
+        android:id="@+id/button_stop_service"
+        android:layout_gravity="center_horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/stop_service"/>
+
 </LinearLayout>
