@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent startIntent = new Intent(MainActivity.this,ForegroundService.class);
-                startIntent.setAction(Utils.START_ACTION);
+                startIntent.setAction(ForegroundService.START_ACTION);
                 startService(startIntent);
             }
         });
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent stopIntent = new Intent(MainActivity.this, ForegroundService.class);
-                stopIntent.setAction(Utils.STOP_ACTION);
+                stopIntent.setAction(ForegroundService.STOP_ACTION);
                 stopService(stopIntent);
             }
         });
